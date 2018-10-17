@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Index from '@/page/index'
 import Content from '@/page/content'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
