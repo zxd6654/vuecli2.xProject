@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/page/index'
-import Content from '@/page/content'
+import Index from '../page/index.vue'
+import Content from '../page/content.vue'
 
 Vue.use(Router);
 
