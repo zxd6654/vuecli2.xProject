@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/dist/',
+    assetsPublicPath: '/',
     proxyTable: {
         '/api/v1/**': {
             target: 'https://cnodejs.org', // 你接口的域名
