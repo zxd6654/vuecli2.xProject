@@ -3,23 +3,25 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-
+import Element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 //应用api文件
-import api from './api/index';
+import api from './api/index'
 //将api方法绑定到全局
-Vue.prototype.$api = api;
+Vue.prototype.$api = api
 
 // 引用工具文件
-import utils from './utils/index';
+import utils from './utils/index'
 // 将工具方法绑定到全局
-Vue.prototype.$utils=utils;
+Vue.prototype.$utils = utils
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+Vue.use(Element)
 new Vue({
-    el: '#app',
-    router,
-    components: {App},
-    template: '<App/>'
-});
+  el: '#app',
+  router,
+  components: {App},
+  template: '<App/>'
+})
