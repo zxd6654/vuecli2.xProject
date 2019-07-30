@@ -3,8 +3,9 @@ import Router from 'vue-router'
 import Index from '../page/index.vue'
 import Content from '../page/content.vue'
 import ElementUi from '../page/element.vue'
+import SetSelectOpt from '../page/setSelectOpt.vue'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   routes: [
@@ -16,11 +17,14 @@ export default new Router({
       path: '/content/:id',
       name: 'content',
       component: Content
-    } ,
-    {
+    }, {
       path: '/element',
       name: 'element',
       component: ElementUi
+    }, {
+      path: '/setSelectOpt',
+      name: 'setSelectOpt',
+      component: SetSelectOpt
     }
   ]
 })

@@ -3,6 +3,7 @@
         <Header></Header>
         <div>
             <router-link :to="'/element'">element</router-link>
+            <router-link :to="'/setSelectOpt'">setSelectOpt</router-link>
         </div>
         <div class="article_list">
             <ul>
