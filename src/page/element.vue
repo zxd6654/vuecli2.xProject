@@ -32,7 +32,7 @@
 </template>
 
 <script>
-  import Sortable from 'sortablejs'
+  import {Sortable, MultiDrag} from 'sortablejs'
 
   export default {
     name: 'element',
@@ -72,6 +72,7 @@
       }
     },
     mounted () {
+      Sortable.mount(new MultiDrag())  //多个拖拽
       this.setSort()
     },
     methods: {
@@ -92,15 +93,20 @@
       },
       //拖拽table中的表
       setSort () {
+        let _that=this;
         const el = document.querySelectorAll('.el-table__body-wrapper > table > tbody')[0]
         Sortable.create(el, {
           ghostClass: 'sortable-ghost',
+          // selectedClass:'sortable-ghost',
+          // multiDrag:true,
           setData: function (dataTransfer) {
             dataTransfer.setData('Text', '')
           },
+
           onEnd: evt => {
-            const targetRow = this.tableData.splice(evt.oldIndex, 1)[0]
-            this.tableData.splice(evt.newIndex, 0, targetRow)
+            console.log(evt)
+            const targetRow = _that.tableData.splice(evt.oldIndex, 1)[0]
+            _that.tableData.splice(evt.newIndex, 0, targetRow)
           }
         })
       },
