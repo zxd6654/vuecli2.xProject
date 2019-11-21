@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { Sortable, MultiDrag } from "sortablejs";
+import Sortable from "sortablejs";
 
 export default {
   name: "element",
@@ -59,13 +59,19 @@ export default {
           amount1: "539",
           amount2: "4.1",
           amount3: 15
+        },
+        {
+          id: "12987127",
+          name: "王小虎",
+          amount1: "539",
+          amount2: "4.1",
+          amount3: 15
         }
       ],
       value: new Date()
     };
   },
   mounted() {
-    Sortable.mount(new MultiDrag()); //多个拖拽
     this.setSort();
   },
   methods: {
@@ -86,22 +92,19 @@ export default {
     },
     //拖拽table中的表
     setSort() {
-      let _that = this;
       const el = document.querySelectorAll(
         ".el-table__body-wrapper > table > tbody"
       )[0];
       Sortable.create(el, {
         ghostClass: "sortable-ghost",
-        // selectedClass:'sortable-ghost',
-        // multiDrag:true,
         setData: function(dataTransfer) {
           dataTransfer.setData("Text", "");
         },
 
         onEnd: evt => {
           console.log(evt);
-          const targetRow = _that.tableData.splice(evt.oldIndex, 1)[0];
-          _that.tableData.splice(evt.newIndex, 0, targetRow);
+          const targetRow = this.tableData.splice(evt.oldIndex, 1)[0];
+          this.tableData.splice(evt.newIndex, 0, targetRow);
         }
       });
     }
