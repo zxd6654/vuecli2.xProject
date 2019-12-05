@@ -5,13 +5,12 @@ import App from './App.vue'
 import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-//应用api文件
+// 应用api文件
 import api from './api/index'
-//将api方法绑定到全局
-Vue.prototype.$api = api
-
 // 引用工具文件
 import utils from './utils/index'
+// 将api方法绑定到全局
+Vue.prototype.$api = api
 // 将工具方法绑定到全局
 Vue.prototype.$utils = utils
 
@@ -22,6 +21,8 @@ Vue.use(Element)
 new Vue({
   el: '#app',
   router,
-  components: {App},
+  components: {
+    App
+  },
   template: '<App/>'
 })

@@ -6,6 +6,8 @@
       <router-link :to="'/element'">element</router-link>
       <br />
       <router-link :to="'/setSelectOpt'">setSelectOpt</router-link>
+      <br />
+      <router-link :to="'/dhtmlGantt'">dhtmlGantt</router-link>
     </div>
     <div class="article_list">
       <ul>
