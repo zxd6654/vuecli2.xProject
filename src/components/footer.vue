@@ -1,6 +1,6 @@
 <template>
     <footer class="copy">
-        Copy &cpoy;FungLeo
+        Footer
     </footer>
 </template>
 
