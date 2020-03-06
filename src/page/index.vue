@@ -19,6 +19,7 @@
             <br/>
             <br/>
         </div>
+        <router-view></router-view>
         <Footer></Footer>
     </div>
 </template>
@@ -30,18 +31,12 @@
     components: {Header, Footer},
     data () {
       return {
-        list: []
       }
     },
     created () {
-      this.getData()
+
     },
     methods: {
-      getData () {
-        this.$api.get('topics', null, r => {
-          this.list = r.data
-        })
-      }
     }
   }
 </script>

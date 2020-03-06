@@ -34,6 +34,9 @@
 </script>
 
 <style scoped>
+    .navMenu{
+        overflow: hidden;
+    }
     /* 水平样式 */
     .el-menu--horizontal>div>.el-submenu {
         float: left;
