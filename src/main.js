@@ -9,10 +9,14 @@ import 'element-ui/lib/theme-chalk/index.css'
 import api from './api/index'
 // 引用工具文件
 import utils from './utils/index'
+// 引用中央事件总线
+import EventBus from './utils/event-bus'
 // 将api方法绑定到全局
 Vue.prototype.$api = api
 // 将工具方法绑定到全局
 Vue.prototype.$utils = utils
+// 将央事件总线绑定到全局
+Vue.prototype.$EventBus = EventBus;
 
 Vue.config.productionTip = false
 
