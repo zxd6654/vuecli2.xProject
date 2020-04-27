@@ -107,7 +107,7 @@ export default {
           this.tableData.splice(evt.newIndex, 0, targetRow);
         }
       });
-    }
+    },
   }
 };
 </script>
