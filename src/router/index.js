@@ -8,6 +8,8 @@ import DhtmlGantt from '../page/dhtmlGantt.vue'
 import Menu from '../page/menu.vue'
 import Lists from '../page/lists.vue'
 import Children from '../page/children.vue'
+import RecycleScroller from '../page/recycleScrollerDemo'
+
 Vue.use(Router)
 
 export default new Router({
@@ -16,7 +18,7 @@ export default new Router({
       path: '/',
       name: 'index',
       component: Index,
-      children:[
+      children: [
         {
           path: 'children',
           name: 'children',
@@ -53,6 +55,11 @@ export default new Router({
       path: '/lists',
       name: 'lists',
       component: Lists
+    },
+    {
+      path: '/recyclescrollerDemo',
+      name: 'recyclescrollerDemo',
+      component: RecycleScroller
     },
   ]
 })

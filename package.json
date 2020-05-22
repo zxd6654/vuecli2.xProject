@@ -15,7 +15,8 @@
     "element-ui": "^2.10.1",
     "sortablejs": "^1.10.0-rc3",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-virtual-scroller": "^1.0.10"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
