@@ -9,7 +9,7 @@ import Menu from '../page/menu.vue'
 import Lists from '../page/lists.vue'
 import Children from '../page/children.vue'
 import RecycleScroller from '../page/recycleScrollerDemo'
-
+import LazyLoad from '../page/lazyLoadDemo'
 Vue.use(Router)
 
 export default new Router({
@@ -60,6 +60,11 @@ export default new Router({
       path: '/recyclescrollerDemo',
       name: 'recyclescrollerDemo',
       component: RecycleScroller
+    },
+    {
+      path: '/lazyLoadDemo',
+      name: 'lazyLoadDemo',
+      component: LazyLoad
     },
   ]
 })

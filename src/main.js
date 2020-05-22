@@ -5,6 +5,7 @@ import App from './App.vue'
 import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import VueLazyLoad from 'vue-lazyload'
 // 应用api文件
 import api from './api/index'
 // 引用工具文件
@@ -16,12 +17,18 @@ Vue.prototype.$api = api
 // 将工具方法绑定到全局
 Vue.prototype.$utils = utils
 // 将央事件总线绑定到全局
-Vue.prototype.$EventBus = EventBus;
+Vue.prototype.$EventBus = EventBus
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 Vue.use(Element)
+Vue.use(VueLazyLoad, {
+  preload: 1,
+  error: require('../static/img/Error.png'),
+  loading: require('../static/img/Loading.png'),
+  attempt: 2,
+})
 new Vue({
   el: '#app',
   router,

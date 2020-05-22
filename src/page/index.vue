@@ -21,6 +21,9 @@
       <router-link :to="'/recyclescrollerDemo'">recycleScroller-大数据长列表虚拟滚动</router-link>
       <br/>
       <br/>
+      <router-link :to="'/lazyLoadDemo'">lazyLoadDemo-图片懒加载</router-link>
+      <br/>
+      <br/>
     </div>
     <router-view></router-view>
     <Footer></Footer>
