@@ -18,10 +18,13 @@
       <router-link :to="'/lists'">lists 数据列表-详情</router-link>
       <br/>
       <br/>
-      <router-link :to="'/recyclescrollerDemo'">recycleScroller-大数据长列表虚拟滚动</router-link>
+      <router-link :to="'/recyclescrollerdemo'">recycleScrollerDemo-大数据长列表虚拟滚动</router-link>
       <br/>
       <br/>
-      <router-link :to="'/lazyLoadDemo'">lazyLoadDemo-图片懒加载</router-link>
+      <router-link :to="'/lazyloaddemo'">lazyLoadDemo-图片懒加载</router-link>
+      <br/>
+      <br/>
+      <router-link :to="'/statelesscomponentdemo'">statelessComponentDemo-无状态组件(函数式组件)</router-link>
       <br/>
       <br/>
     </div>

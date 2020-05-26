@@ -8,8 +8,10 @@ import DhtmlGantt from '../page/dhtmlGantt.vue'
 import Menu from '../page/menu.vue'
 import Lists from '../page/lists.vue'
 import Children from '../page/children.vue'
-import RecycleScroller from '../page/recycleScrollerDemo'
-import LazyLoad from '../page/lazyLoadDemo'
+import recycleScrollerDemo from '../page/recycleScrollerDemo'
+import lazyLoadDemo from '../page/lazyLoadDemo'
+import statelessComponentDemo from '../page/StatelessComponentDemo'
+
 Vue.use(Router)
 
 export default new Router({
@@ -59,12 +61,17 @@ export default new Router({
     {
       path: '/recyclescrollerDemo',
       name: 'recyclescrollerDemo',
-      component: RecycleScroller
+      component: recycleScrollerDemo
     },
     {
-      path: '/lazyLoadDemo',
-      name: 'lazyLoadDemo',
-      component: LazyLoad
+      path: '/lazyloaddemo',
+      name: 'lazyloaddemo',
+      component: lazyLoadDemo
     },
+    {
+      path: '/statelesscomponentdemo',
+      name: '/statelesscomponentdemo',
+      component: statelessComponentDemo
+    }
   ]
 })
