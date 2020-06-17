@@ -27,6 +27,9 @@
       <router-link :to="'/statelesscomponentdemo'">statelessComponentDemo-无状态组件(函数式组件)</router-link>
       <br/>
       <br/>
+      <router-link :to="'/scrollIntoView'">vue中实现锚点跳转以及滚动监听跳转到相应标签的方法</router-link>
+      <br/>
+      <br/>
     </div>
     <router-view></router-view>
     <Footer></Footer>

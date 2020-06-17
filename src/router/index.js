@@ -11,6 +11,7 @@ import Children from '../page/children.vue'
 import recycleScrollerDemo from '../page/recycleScrollerDemo'
 import lazyLoadDemo from '../page/lazyLoadDemo'
 import statelessComponentDemo from '../page/StatelessComponentDemo'
+import scrollIntoView from '../page/scrollIntoView'
 
 Vue.use(Router)
 
@@ -72,6 +73,11 @@ export default new Router({
       path: '/statelesscomponentdemo',
       name: '/statelesscomponentdemo',
       component: statelessComponentDemo
+    },
+    {
+      path: '/scrollIntoview',
+      name: '/scrollIntoview',
+      component: scrollIntoView
     }
   ]
 })
