@@ -21,13 +21,19 @@
       <router-link :to="'/recyclescrollerdemo'">recycleScrollerDemo-大数据长列表虚拟滚动</router-link>
       <br/>
       <br/>
-      <router-link :to="'/lazyloaddemo'">lazyLoadDemo-图片懒加载</router-link>
+      <router-link :to="'/lazyloaddemo'">lazyLoadDemo-图片懒加载</router-link> 
       <br/>
       <br/>
       <router-link :to="'/statelesscomponentdemo'">statelessComponentDemo-无状态组件(函数式组件)</router-link>
       <br/>
       <br/>
       <router-link :to="'/scrollIntoView'">vue中实现锚点跳转以及滚动监听跳转到相应标签的方法</router-link>
+      <br/>
+      <br/>
+      <router-link :to="'/multiselect'">vue-multiselect选择器</router-link>
+      <br/>
+      <br/>
+      <router-link :to="'/tinymce'">tinymce富文本编辑器</router-link>
       <br/>
       <br/>
     </div>

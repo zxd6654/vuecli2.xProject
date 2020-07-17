@@ -12,6 +12,20 @@ import recycleScrollerDemo from '../page/recycleScrollerDemo'
 import lazyLoadDemo from '../page/lazyLoadDemo'
 import statelessComponentDemo from '../page/StatelessComponentDemo'
 import scrollIntoView from '../page/scrollIntoView'
+import multiselect from '../page/multiselect.vue'
+import tinymce from '../page/tinymce.vue'
+
+//require.context() 
+const path=require('path');
+const files=require.context('../page',false,/\.vue$/);
+const modules={};
+files.keys().forEach(key => {
+  const name=path.basename(key,'.vue');
+  console.log(name)
+  modules[name]=files(key).default||files(key)
+});
+
+console.log(files,files.keys(),modules)
 
 Vue.use(Router)
 
@@ -78,6 +92,16 @@ export default new Router({
       path: '/scrollIntoview',
       name: '/scrollIntoview',
       component: scrollIntoView
+    },
+    {
+      path:'/multiselect',
+      name:'multiselect',
+      component:multiselect
+    },
+    {
+      path:'/tinymce',
+      name:'tinymce',
+      component:tinymce
     }
   ]
 })
