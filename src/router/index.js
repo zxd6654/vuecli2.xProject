@@ -14,6 +14,7 @@ import statelessComponentDemo from '../page/StatelessComponentDemo'
 import scrollIntoView from '../page/scrollIntoView'
 import multiselect from '../page/multiselect.vue'
 import tinymce from '../page/tinymce.vue'
+import highlight from '../page/highlight.vue'
 
 //require.context() 
 const path=require('path');
@@ -102,6 +103,11 @@ export default new Router({
       path:'/tinymce',
       name:'tinymce',
       component:tinymce
+    },
+    {
+      path:'/highlight',
+      name:'highlight',
+      component:highlight
     }
   ]
 })

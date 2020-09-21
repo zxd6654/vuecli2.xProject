@@ -21,6 +21,17 @@ Vue.prototype.$EventBus = EventBus
 
 Vue.config.productionTip = false
 
+//高亮显示
+import hljs from 'highlight.js';
+import 'highlight.js/styles/atom-one-dark.css'	//样式
+
+Vue.directive('highlight',function (el) {
+  let blocks = el.querySelectorAll('pre code');
+  blocks.forEach((block)=>{
+    hljs.highlightBlock(block)    
+  })
+})
+
 /* eslint-disable no-new */
 Vue.use(Element)
 Vue.use(VueLazyLoad, {

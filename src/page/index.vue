@@ -36,6 +36,9 @@
       <router-link :to="'/tinymce'">tinymce富文本编辑器</router-link>
       <br/>
       <br/>
+      <router-link :to="'/highlight'">highlight高亮显示</router-link>
+      <br/>
+      <br/>
     </div>
     <router-view></router-view>
     <Footer></Footer>
